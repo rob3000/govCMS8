@@ -128,7 +128,11 @@
             "docroot/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-        "patches": {}
+        "patches": {
+            "drupal/google_analytics": {
+                "Fatal exception for search": "https://www.drupal.org/files/issues/2018-12-18/3021119-analytics-fatal-error.patch"
+            }
+        }
     },
     "autoload": {
         "psr-4": {
